@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Slides Glider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+
     <!-- Link do CSS -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
 
     <!-- Link tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,18 +41,31 @@
                 </nav>
             </div>
 
+            <span class="menu__mobile">Navegar <i class="fas fa-caret-right"></i></span>
+
+            <div class="navbar__mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="#">Minha lista</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
             <div class="navbar__user">
                 <ul>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="#">Infantil</a></li>
-                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <li class="infantil close"><a href="#">Infantil</a></li>
+                    <li class="notificacao close"><a href="#"><i class="fas fa-bell"></i></a></li>
                 </ul>
 
                 <div class="user">
                     <img src="/assets/user.jpeg" alt="Usuario">
                     <i class="fas fa-sort-down"></i>
-                </div>
-                                    
                 </div>
             </div>
         </div>
@@ -55,12 +73,66 @@
 
     <main>
         <section class="banner">
-            
+            <div class="banner_information">
+                <h2>Senhor dos anéis - A sociedade do anel</h2>
+                <p>Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. </p>
+
+                <div class="information">
+                    <button type="button" id="play" class="btn">Assistir<i class="fas fa-play"></i></button>
+
+                    <button type="button" id="list" class="btn">lista <i class="fas fa-plus-circle"></i></button>
+
+                    <button type="button" id="details" class="btn">Detalhes</button>
+                </div>
+
+                <div class="informations__add">
+                    <span class="duracao"><i class="far fa-clock"></i> 1h 59 min</span>
+                    <span class="comments" id="comments"><i class="far fa-comments"></i></span>
+                    <span class="download" id="download"><i class="fas fa-download"></i></span>
+                    <span class="elenco">Elenco...</span>
+                </div>
+                
+            </div>
+
+            <div class="img__banner">
+                <video alt="" height="400" width="700" autoplay>
+                    <source src="/assets/video/O Senhor dos Anéis  A sociedade do Anel 2001 - Trailer (Legendado).mp4" type="video/mp4">
+                </video>
+                <i class="fas fa-volume-mute"></i>
+            </div>
+        </section>
+
+        <section class="c-carousel c-carousel--simple card">
+            <div class="title">
+                <span></span>
+                <h3>Adicionados recentemente</h3>    
+            </div>
+            <div class="c-carousel__slides js-carousel--simple">
+              <article class="c-carousel__slide"><img src="/assets/img/mini1.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini2.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini3.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini4.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini5.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini6.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini7.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini8.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini9.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini10.jpg" alt=""></article>
+              
+            </div>
+  
+            <!-- <div class="js-carousel--simple-dots" role="tablist"></div>
+            <div class="btn">
+                <button class="js-carousel--simple-prev" aria-label="Anterior"><i class="fas fa-angle-double-left"></i></button>
+                <button class="js-carousel--simple-next" aria-label="Próximo"><i class="fas fa-angle-double-right"></i></button>
+            </div> -->
         </section>
     </main>
    
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
+    <script src="/scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/392610c469.js" crossorigin="anonymous"></script>
 </body>
 </html>
