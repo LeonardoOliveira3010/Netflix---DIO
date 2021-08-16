@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --background-dark: #141414;
+    --background-light: #191a1d;
+    --color-light: #fff;
+    --color-hover: #E50914
+}
+
+body, html{
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-sort-down{
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    color: var(--color-light);
+}
+
+.fas{
+    font-size: 1.9rem;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.header .logo{
+    width: 9.3rem;
+    height: 3.1rem;
+}
+
+.menu__principal{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+a{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar li{
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    font-weight: 500;
+    color: var(--color-light);
+}
+
+.navbar ul li a:hover{
+    color: var(--color-hover);
+}
+
+.navbar ul, .navbar__user ul{
+    display: flex;
+    align-items: center
+}
+
+/* Navbar do Usuario */
+
+.navbar__user{
+    background-color: var(--background-light);
+    width: 27rem;
+    height: 5rem;
+    /* padding-left: 1.5rem; */
+    display: flex;
+    align-items: center;
+    margin-left: 50rem;
+}
+
+.navbar__user li{
+    padding: 1.5rem;
+}
+
+.navbar__user a{
+    color: var(--color-light);
+    text-transform: uppercase;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .5rem;
+}
+
+/* Banner principal */
+
+.banner{
+    background-image: url(/assets/banner.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+}
