@@ -1,3 +1,12 @@
+// Menu Mobile
+const menuMobile = document.querySelector('.menu__mobile')
+const navBarMobile = document.querySelector('.navbar__mobile')
+
+
+menuMobile.addEventListener('click', () =>{
+  navBarMobile.classList.toggle('stick')
+})
+
 // Glider (Carousel)
 const simpleCarousel = document.querySelector('.js-carousel--simple')
 
