@@ -20,3 +20,5 @@ new Glider(simpleCarousel, {
       next: '.glider-next'
     }
   });
+
+
