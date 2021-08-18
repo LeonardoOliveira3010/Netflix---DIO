@@ -106,7 +106,7 @@ a{
 .navbar__user{
     width: 27rem;
     height: 5rem;
-    /* padding-left: 1.5rem; */
+    padding-left: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 50rem;
