@@ -22,3 +22,12 @@ new Glider(simpleCarousel, {
   });
 
 
+// HEADER 
+
+
+const scrollHeader = () => {
+  const header = document.querySelector('.header__mobile')
+  header.classList.toggle('sticky', window.scrollY > 0)
+}
+
+window.addEventListener('scroll', scrollHeader)
