@@ -5,6 +5,7 @@ const navBarMobile = document.querySelector('.navbar__mobile')
 
 menuMobile.addEventListener('click', () =>{
   navBarMobile.classList.toggle('stick')
+  
 })
 
 // Glider (Carousel)
@@ -30,4 +31,14 @@ const scrollHeader = () => {
   header.classList.toggle('sticky', window.scrollY > 0)
 }
 
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener('scroll', scrollHeader,)
+
+
+// Programa que muta o video no momento que é passado o mouse em cima dele
+const video = document.querySelector('.video-screen')
+
+const play = () =>{
+  
+  video.play()
+}
+

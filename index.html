@@ -23,7 +23,7 @@
       rel="stylesheet">
     <title>Clone Netflix - DIO</title>
 </head>
-<body>
+<body oncontextmenu="return false">
     
     <header class="header header__mobile">
         <img class="logo" src="/assets/netflix-logo.svg" alt="Logo Netflix">
@@ -41,7 +41,7 @@
                 </nav>
             </div>
 
-            <span class="menu__mobile">Navegar <i class="fas fa-caret-right"></i></span>
+            <button id="clicker" value="Navegar" class="menu__mobile">Navegar</button>
 
             <div class="navbar__mobile">
                 <nav>
@@ -74,8 +74,8 @@
     <main>
         <section class="banner">
             <div class="banner_information">
-                <h2>Senhor dos anéis - A sociedade do anel</h2>
-                <p>Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. </p>
+                <h2>Venom: Tempo de Carnificina</h2>
+                <p>O relacionamento entre Eddie e Venom está evoluindo. Buscando a melhor forma de lidar com a inevitável simbiose, esse dois lados descobrem como viver juntos e, de alguma forma, se tornarem melhores juntos do que separados. </p>
 
                 <div class="information">
                     <button type="button" id="play" class="btn">Assistir<i class="fas fa-play"></i></button>
@@ -95,10 +95,14 @@
             </div>
 
             <div class="video">
-                <video class="video-screen" controls height="400" width="700" autoplay>
-                    <source src="/assets/video/O Senhor dos Anéis  A sociedade do Anel 2001 - Trailer (Legendado).mp4" type="video/mp4">
+                <video onclick="play()" class="video-screen" height="400" width="700">
+                    <source src="/assets/video/Venom.mp4" type="video/mp4">
                 </video>
+
+                <!-- <button onmousemove="play()">Play</button> -->
+                <!-- <button onmousemove="pause()">pause</button> -->
             </div>
+
             
         </section>
 

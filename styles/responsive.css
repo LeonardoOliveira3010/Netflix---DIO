@@ -55,6 +55,11 @@
         margin-left: 1rem;
     }
 
+    .menu__mobile{
+        background: none;
+        border: none;
+    }
+
     .navbar__user{
         margin-left: 0rem;
         background-color: transparent;
