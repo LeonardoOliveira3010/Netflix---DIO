@@ -2,7 +2,6 @@
 const menuMobile = document.querySelector('.menu__mobile')
 const navBarMobile = document.querySelector('.navbar__mobile')
 
-
 menuMobile.addEventListener('click', () =>{
   navBarMobile.classList.toggle('stick')
   
@@ -16,8 +15,6 @@ button.onclick = function(){
   search.classList.toggle('active')
 }
 
-console.log(search)
-
 // Glider (Carousel)
 const simpleCarousel = document.querySelector('.js-carousel--simple')
 
@@ -30,12 +27,9 @@ new Glider(simpleCarousel, {
       prev: '.glider-prev',
       next: '.glider-next'
     }
-  });
-
+});
 
 // HEADER 
-
-
 const scrollHeader = () => {
   const header = document.querySelector('.header__mobile')
   header.classList.toggle('sticky', window.scrollY > 0)
@@ -43,11 +37,8 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader,)
 
-
 // Programa que muta o video no momento que é passado o mouse em cima dele
 const video = document.querySelector('.video-screen')
 
-const play = () =>{
-  
-  video.play()
-}
+const play = () =>video.play()
+
