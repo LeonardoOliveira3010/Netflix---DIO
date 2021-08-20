@@ -8,6 +8,16 @@ menuMobile.addEventListener('click', () =>{
   
 })
 
+// Botão de busca
+const search = document.querySelector('#search')
+const button = document.querySelector('.button')
+
+button.onclick = function(){
+  search.classList.toggle('active')
+}
+
+console.log(search)
+
 // Glider (Carousel)
 const simpleCarousel = document.querySelector('.js-carousel--simple')
 
@@ -41,4 +51,3 @@ const play = () =>{
   
   video.play()
 }
-

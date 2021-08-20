@@ -1,5 +1,6 @@
 @media (max-width: 700px) {
     .header{
+        width: 100%;
         padding: 0.5rem 2rem;
         position: fixed;
         z-index: 999;
@@ -61,8 +62,17 @@
     }
 
     .navbar__user{
-        margin-left: 0rem;
+        width: 100%;
+        
+        padding-left: 2.5rem;
         background-color: transparent;
+    }
+
+    
+
+    .navbar ul, .navbar__user ul{
+        visibility: hidden;
+        display: none;
     }
 
     .close{
@@ -119,6 +129,10 @@
     .fa-volume-mute{
         top: 1rem;
         right: 2rem;
+    }
+
+    #search.active{
+        width: 3rem;
     }
 }
 

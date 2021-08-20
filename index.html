@@ -26,7 +26,7 @@
 <body oncontextmenu="return false">
     
     <header class="header header__mobile">
-        <img class="logo" src="/assets/netflix-logo.svg" alt="Logo Netflix">
+        <img class="logo" src="/assets/icons/netflix-logo.svg" alt="Logo Netflix">
 
         <div class="menu__principal">
             <div class="navbar">
@@ -56,18 +56,30 @@
                 </nav>
             </div>
 
-            <div class="navbar__user">
-                <ul>
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li class="infantil close"><a href="#">Infantil</a></li>
-                    <li class="notificacao close"><a href="#"><i class="fas fa-bell"></i></a></li>
-                </ul>
-
-                <div class="user">
-                    <img src="/assets/user.jpeg" alt="Usuario">
-                    <i class="fas fa-sort-down"></i>
+            <div id="content__user">
+                <div id="search">
+                    <div class="input">
+                        <input type="text" placeholder="Série, filme, gênero...">
+                    </div> 
+                    <div class="icon">
+                        <i class="fas fa-search button"></i> 
+                    </div>
+                    
+                </div>
+    
+                <div class="navbar__user">
+                    <ul>
+                        <li class="infantil close"><a href="#">Infantil</a></li>
+                        <li class="notificacao close"><a href="#"><i class="fas fa-bell"></i></a></li>
+                    </ul>
+    
+                    <div class="user">
+                        <img src="/assets/user.jpeg" alt="Usuario">
+                        <!-- <i class="fas fa-sort-down"></i> -->
+                    </div>
                 </div>
             </div>
+            
         </div>
     </header>
 
@@ -87,8 +99,8 @@
 
                 <div class="informations__add">
                     <span class="duracao"><i class="far fa-clock"></i> 1h 59 min</span>
-                    <span class="comments" id="comments"><i class="far fa-comments"></i></span>
-                    <span class="download" id="download"><i class="fas fa-download"></i></span>
+                    <span class="comments" id="comments"><i class="far fa-comment-alt"></i></span>
+                    <span class="download" id="download"><i class="far fa-arrow-alt-circle-down"></i></span>
                     <span class="elenco">Elenco...</span>
                 </div>
                 
