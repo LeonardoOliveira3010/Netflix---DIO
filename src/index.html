@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Slides Glider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+    <!-- Link tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Clone Netflix - DIO</title>
+</head>
+<body oncontextmenu="return false">
+    
+    <header class="header header__mobile">
+        <img class="logo" src="/assets/icons/netflix-logo.svg" alt="Logo Netflix">
+
+        <div class="menu__principal">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="#">Minha lista</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button id="clicker" value="Navegar" class="menu__mobile">Navegar</button>
+
+            <div class="navbar__mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="#">Minha lista</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="content__user">
+                <div id="search">
+                    <div class="input">
+                        <input type="text" placeholder="Série, filme, gênero...">
+                    </div> 
+                    <div class="icon">
+                        <i class="fas fa-search button"></i> 
+                    </div>
+                    
+                </div>
+    
+                <div class="navbar__user">
+                    <ul>
+                        <li class="infantil close"><a href="#">Infantil</a></li>
+                        <li class="notificacao close"><a href="#"><i class="fas fa-bell"></i></a></li>
+                    </ul>
+    
+                    <div class="user">
+                        <img src="/assets/user.jpeg" alt="Usuario">
+                        <!-- <i class="fas fa-sort-down"></i> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner_information">
+                <h2>Venom: Tempo de Carnificina</h2>
+                <p>O relacionamento entre Eddie e Venom está evoluindo. Buscando a melhor forma de lidar com a inevitável simbiose, esse dois lados descobrem como viver juntos e, de alguma forma, se tornarem melhores juntos do que separados. </p>
+
+                <div class="information">
+                    <button type="button" id="play" class="btn">Assistir<i class="fas fa-play"></i></button>
+
+                    <button type="button" id="list" class="btn">lista <i class="fas fa-plus-circle"></i></button>
+
+                    <button type="button" id="details" class="btn">Detalhes</button>
+                </div>
+
+                <div class="informations__add">
+                    <span class="duracao"><i class="far fa-clock"></i> 1h 59 min</span>
+                    <span class="comments" id="comments"><i class="far fa-comment-alt"></i></span>
+                    <span class="download" id="download"><i class="far fa-arrow-alt-circle-down"></i></span>
+                    <span class="elenco">Elenco...</span>
+                </div>
+                
+            </div>
+
+            <div class="video">
+                <video onclick="play()" class="video-screen" height="400" width="700">
+                    <source src="/assets/video/Venom.mp4" type="video/mp4">
+                </video>
+
+                <!-- <button onmousemove="play()">Play</button> -->
+                <!-- <button onmousemove="pause()">pause</button> -->
+            </div>
+
+            
+        </section>
+
+        <section class="c-carousel c-carousel--simple card">
+            <div class="title">
+                <span></span>
+                <h3>Adicionados recentemente</h3>    
+            </div>
+            <div class="c-carousel__slides js-carousel--simple">
+              <article class="c-carousel__slide"><img src="/assets/img/mini1.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini2.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini3.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini4.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini5.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini6.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini7.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini8.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini9.jpg" alt=""></article>
+              <article class="c-carousel__slide"><img src="/assets/img/mini10.jpg" alt=""></article>
+            </div>
+
+
+            <!-- <div class="js-carousel--simple-dots" role="tablist"></div>
+            <div class="btn">
+                <button class="js-carousel--simple-prev" aria-label="Anterior"><i class="fas fa-angle-double-left"></i></button>
+                <button class="js-carousel--simple-next" aria-label="Próximo"><i class="fas fa-angle-double-right"></i></button>
+            </div> -->
+        </section>
+    </main>
+   
+    <!-- ################# Modais ################ -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/modais.js"></script>
+    <script src="https://kit.fontawesome.com/392610c469.js" crossorigin="anonymous"></script>
+</body>
+</html>
